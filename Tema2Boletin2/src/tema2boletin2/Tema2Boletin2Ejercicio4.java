@@ -75,9 +75,9 @@ Por último, el algoritmo mostrará por pantalla la suma de las dos tiradas en f
 		case "seis" :
 			num2 = 6;
 		break;
-		default: 
-			System.out.println(num + num2);
+		default:
+			System.out.println(":(");
 			}
-	
+		System.out.println(num + num2);
 	}
 }
