@@ -11,7 +11,7 @@ Por último, el algoritmo mostrará por pantalla la suma de las dos tiradas en f
 	public static void main(String[] args) {
 		//declaramos las variables
 		String tirada1, tirada2;
-		int num, num2;
+		int num = 0, num2= 0;
 		//iniciamos el scanner
 		Scanner lee = new Scanner(System.in);
 		
@@ -76,8 +76,8 @@ Por último, el algoritmo mostrará por pantalla la suma de las dos tiradas en f
 			num2 = 6;
 		break;
 		default:
-			System.out.println(":(");
+			System.out.println("El resultado de las tiradas es: " + num + num2);
 			}
-		System.out.println(num + num2);
+		
 	}
 }
