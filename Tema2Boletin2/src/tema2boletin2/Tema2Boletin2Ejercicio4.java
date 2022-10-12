@@ -18,8 +18,10 @@ Por último, el algoritmo mostrará por pantalla la suma de las dos tiradas en f
 		//solicitamos el numero de la primera y la segunda tirada
 		
 		System.out.println("El resultado de las tiradas debe introducirlo en letras!");
+		
 		System.out.println("Por favor introduzca el resultado de la primera tirada:");
 		tirada1 = lee.next();
+		
 		System.out.println("Por favor introduzca el resultado de la segunda tirada:");
 		tirada2 = lee.next();
 		
@@ -48,7 +50,10 @@ Por último, el algoritmo mostrará por pantalla la suma de las dos tiradas en f
 		case "seis" :
 			num = 6;
 		break;
+		default :
+		System.out.println("Introduzca el dato correctamente.");
 		}
+		
 		
 		switch (tirada2) {
 		
@@ -74,10 +79,13 @@ Por último, el algoritmo mostrará por pantalla la suma de las dos tiradas en f
 		
 		case "seis" :
 			num2 = 6;
-		break;
+			break;
+		
 		default:
-			System.out.println("El resultado de las tiradas es: " + num + num2);
+			System.out.println("Introduzca el dato correctamente.");
 			}
 		
+		System.out.println("el resultado de la tirada es: " + (num + num2));
+		lee.close();
 	}
 }
