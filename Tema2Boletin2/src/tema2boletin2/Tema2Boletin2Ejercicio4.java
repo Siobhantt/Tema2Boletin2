@@ -25,6 +25,8 @@ Por último, el algoritmo mostrará por pantalla la suma de las dos tiradas en f
 		System.out.println("Por favor introduzca el resultado de la segunda tirada:");
 		tirada2 = lee.next();
 		
+		//iniciamos el switch donde establecemos que en cada tirada se alamcenara el resultado en letra e igualamos la variable num de ese resultado pero en numero
+		//ejemplo: "uno" se guarda en la variable tirada1 y en la variable num guardamos el equivalente el numero que seria 1, hacemos eso con todos los casos
 		
 		switch (tirada1) {
 		case "uno" :
@@ -84,6 +86,8 @@ Por último, el algoritmo mostrará por pantalla la suma de las dos tiradas en f
 		default:
 			System.out.println("Introduzca el dato correctamente.");
 			}
+		
+		//imprimimos el resultado guardando entre parentesis para que se sumen correctamente.
 		
 		System.out.println("el resultado de la tirada es: " + (num + num2));
 		lee.close();
