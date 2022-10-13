@@ -18,31 +18,31 @@ public class Tema2Boletin2Ejercicio2 {
 	diaIntroducidoUser = lee.nextInt();
 	
 	switch (diaIntroducidoUser) {
-	case 1 :
+	case 1 -> {
 		System.out.println("Lunes");
-		break;
-	case 2 :
+	}
+	case 2 ->{
 		System.out.println("Martes");
-		break;
-	case 3 :
+	}
+	case 3 ->{
 		System.out.println("Miercoles");
-		break;
-	case 4 :
+	}
+	case 4 ->{
 		System.out.println("Jueves");
-		break;	
-	case 5 :
+	}	
+	case 5 ->{
 		System.out.println("Viernes");
-		break;
-	case 6 :
+	}
+	case 6 ->{
 		System.out.println("Sabado");
-		break;
-	case 7 :
+	}
+	case 7 ->{
 		System.out.println("Domingo");
-		break;
-		default:
+	}
+		default-> {
 			System.out.println("Es importante que el valor sea del 1 al 7");
 	}
-	
+	}
 	//cerramos el scanner
 	lee.close();
 	

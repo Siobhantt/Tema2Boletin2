@@ -12,7 +12,7 @@ public class Tema2Boletin2Ejercicio1 {
 		//iniciamos el scanner
 		Scanner lee = new Scanner(System.in);
 		
-		//imprimimos la solicitud y la guardamos en la variable entradaUser
+		//imprimimos la solicitud y la guardamos en la variable notaUser
 		System.out.println("Por favor introduzca una nota entera: ");
 		notaUser = lee.nextInt();
 		
