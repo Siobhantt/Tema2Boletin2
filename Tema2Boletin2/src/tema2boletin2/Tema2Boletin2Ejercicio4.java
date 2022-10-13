@@ -29,29 +29,30 @@ Por último, el algoritmo mostrará por pantalla la suma de las dos tiradas en f
 		//ejemplo: "uno" se guarda en la variable tirada1 y en la variable num guardamos el equivalente el numero que seria 1, hacemos eso con todos los casos
 		
 		switch (tirada1) {
-		case "uno" :
+		case "uno", "UNO" :
 			num = 1;
 		break;
 		
-		case "dos" :
+		case "dos", "DOS" :
 			num = 2;
 		break;
 		
-		case "tres" :
+		case "tres", "TRES" :
 			num = 3;
 		break;
 		
-		case "cuatro" :
+		case "cuatro", "CUATRO" :
 			num = 4;
 		break;
 		
-		case "cinco" :
+		case "cinco", "CINCO" :
 			num = 5;
 		break;
 		
-		case "seis" :
+		case "seis", "SEIS" :
 			num = 6;
 		break;
+		
 		default :
 		System.out.println("Introduzca el dato correctamente.");
 		}
@@ -61,27 +62,27 @@ Por último, el algoritmo mostrará por pantalla la suma de las dos tiradas en f
 		
 		switch (tirada2) {
 		
-		case "uno" :
+		case "uno", "UNO":
 			num2 =1;
 		break;
 		
-		case "dos" :
+		case "dos", "DOS":
 			num2 = 2;
 		break;
 		
-		case "tres" :
+		case "tres", "TRES":
 			num2 = 3;
 		break;
 		
-		case "cuatro" :
+		case "cuatro", "CUATRO":
 			num2 = 4;
 		break;
 		
-		case "cinco" :
+		case "cinco", "CINCO" :
 			num2 = 5;
 		break;
 		
-		case "seis" :
+		case "seis", "SEIS" :
 			num2 = 6;
 			break;
 		
@@ -90,8 +91,15 @@ Por último, el algoritmo mostrará por pantalla la suma de las dos tiradas en f
 			}
 		
 		//imprimimos el resultado guardando entre parentesis para que se sumen correctamente.
+	
+		/*Iniciamos un if y establecemos que num y num2 sea mayor a 0 y solo en 
+		ese caso imprima el resultado de ambas tiradas por si el usuario es *** y pone 
+		otra cosa en la entrada del programa que no sea lo que se le ha soicitado*/
 		
-		System.out.println("el resultado de la tirada es: " + (num + num2));
+		
+		if (num>0 && num2>0) {
+			System.out.println("el resultado de la tirada es: " + (num + num2));
+		}
 		
 		//cerramos el scanner
 		lee.close();

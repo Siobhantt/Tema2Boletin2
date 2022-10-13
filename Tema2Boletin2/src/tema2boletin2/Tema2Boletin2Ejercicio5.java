@@ -38,7 +38,7 @@ public class Tema2Boletin2Ejercicio5 {
 			System.out.println("El carnet clase E corresponde a Autobuses");
 		}
 		
-		case "C1", "C5" -> { 
+		case "C1", "C2" ,"C3", "C4" ,"C5" -> { 
 			System.out.println("El carnet clase E corresponde a Camiones");
 			}
 		
